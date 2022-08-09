@@ -8,3 +8,10 @@ h1 {
     color: rebeccapurple;
   }
 }
+
+.bg {
+  background-image: url('./images/webpack-logo.svg');
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}

@@ -16,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"h1 {\\n  font-size: 2em;\\n  -webkit-text-size-adjust: none;\\n     -moz-text-size-adjust: none;\\n          text-size-adjust: none;\\n  transition: all 0.3s;\\n  color: green;\\n}\\nh1:hover {\\n  transform: translateX(50px);\\n  color: rebeccapurple;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://udemy-webpack/./src/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./images/webpack-logo.svg */ \"./src/images/webpack-logo.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"h1 {\\n  font-size: 2em;\\n  -webkit-text-size-adjust: none;\\n     -moz-text-size-adjust: none;\\n          text-size-adjust: none;\\n  transition: all 0.3s;\\n  color: green;\\n}\\nh1:hover {\\n  transform: translateX(50px);\\n  color: rebeccapurple;\\n}\\n\\n.bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  background-size: cover;\\n  width: 100px;\\n  height: 100px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://udemy-webpack/./src/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -31,6 +31,17 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  }\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://udemy-webpack/./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
 /*!**************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
@@ -39,6 +50,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 "use strict";
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://udemy-webpack/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/images/webpack-logo.svg":
+/*!*************************************!*\
+  !*** ./src/images/webpack-logo.svg ***!
+  \*************************************/
+/***/ ((module) => {
+
+eval("module.exports = \"images/webpack-logo.svg\";\n\n//# sourceURL=webpack://udemy-webpack/./src/images/webpack-logo.svg?");
 
 /***/ }),
 
@@ -166,6 +187,9 @@ eval("console.log('Sub.js');\n\n\n//# sourceURL=webpack://udemy-webpack/./src/su
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -205,6 +229,32 @@ eval("console.log('Sub.js');\n\n\n//# sourceURL=webpack://udemy-webpack/./src/su
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"app": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
