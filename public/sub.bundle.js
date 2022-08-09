@@ -15,7 +15,7 @@
   \********************/
 /***/ (() => {
 
-eval("console.log('Sub.js');\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.js?");
+eval("throw new Error(\"Module build failed (from ./node_modules/eslint-loader/dist/cjs.js):\\nTypeError: Cannot read properties of undefined (reading 'getFormatter')\\n    at getFormatter (/Users/tatsuya/Desktop/github/udemy-webpack/node_modules/eslint-loader/dist/getOptions.js:52:20)\\n    at getOptions (/Users/tatsuya/Desktop/github/udemy-webpack/node_modules/eslint-loader/dist/getOptions.js:30:23)\\n    at Object.loader (/Users/tatsuya/Desktop/github/udemy-webpack/node_modules/eslint-loader/dist/index.js:17:43)\");\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.js?");
 
 /***/ })
 
@@ -24,7 +24,7 @@ eval("console.log('Sub.js');\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/sub.js"]();
 /******/ 	
