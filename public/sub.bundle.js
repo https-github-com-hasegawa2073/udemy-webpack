@@ -15,7 +15,7 @@
   \********************/
 /***/ (() => {
 
-eval("console.log('Sub.js');\n\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.js?");
+eval("console.log('Sub.js');\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.js?");
 
 /***/ })
 

@@ -9,6 +9,27 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_sub_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../src/sub.js */ \"./src/sub.js\");\n/* harmony import */ var _src_sub_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_sub_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n\n\n\nvar init = function init() {\n  console.log('This is a main js file.');\n};\n\ninit();\n\n//# sourceURL=webpack://udemy-webpack/./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/sub.js":
+/*!********************!*\
+  !*** ./src/sub.js ***!
+  \********************/
+/***/ (() => {
+
+eval("console.log('Sub.js');\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/app.scss":
 /*!*********************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/app.scss ***!
@@ -137,27 +158,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 "use strict";
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://udemy-webpack/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_sub_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../src/sub.js */ \"./src/sub.js\");\n/* harmony import */ var _src_sub_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_sub_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n\n\n\nconsole.log('This is a main js file.');\n\n\n//# sourceURL=webpack://udemy-webpack/./src/app.js?");
-
-/***/ }),
-
-/***/ "./src/sub.js":
-/*!********************!*\
-  !*** ./src/sub.js ***!
-  \********************/
-/***/ (() => {
-
-eval("console.log('Sub.js');\n\n\n//# sourceURL=webpack://udemy-webpack/./src/sub.js?");
 
 /***/ })
 

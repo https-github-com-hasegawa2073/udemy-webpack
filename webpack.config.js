@@ -1,4 +1,6 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const loader = require('sass-loader');
 
 module.exports = {
   mode: 'development',
@@ -6,13 +8,23 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].bundle.js',
-    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+      {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          // MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(jpe?g|gif|png|svg|woff2?|ttf|eot)$/,
@@ -27,4 +39,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
 };
