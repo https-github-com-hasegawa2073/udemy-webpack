@@ -6,8 +6,10 @@
   "author": "hasegawa2073 <hasetatsu2001@icloud.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "cli": "^1.0.1",
     "css-loader": "^6.7.1",
+    "postcss-loader": "^7.0.1",
     "sass": "^1.54.3",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",

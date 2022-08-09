@@ -1,6 +1,10 @@
 h1 {
   font-size: 2em;
+  text-size-adjust: none;
+  transition: all 0.3s;
+  color: green;
   &:hover {
+    transform: translateX(50px);
     color: rebeccapurple;
   }
 }
