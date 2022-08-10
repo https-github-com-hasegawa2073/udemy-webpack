@@ -2,8 +2,6 @@
   "name": "udemy-webpack",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/hasegawa2073/udemy-webpack.git",
-  "author": "hasegawa2073 <hasetatsu2001@icloud.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.18.10",
